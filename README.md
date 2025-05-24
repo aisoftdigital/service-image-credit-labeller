@@ -1,13 +1,12 @@
 # Credit Overlay API Documentation
 
+This API allows you to add text overlay to credit with customizable styling.
+
 ## Sample .env file
 ```env
-# Example .env file for Credit Overlay API
+PORT=3000
 API_KEY={ "alice":"11111111111111111111111111111111", "bob":"22222222222222222222222222222222" }
-# Add any other environment variables here if needed
 ```
-
-This API allows you to add text overlay to credit with customizable styling.
 
 ## ENDPOINT
 POST /credit-overlay
