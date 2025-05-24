@@ -14,6 +14,9 @@ try {
   API_KEYS = { default: process.env.API_KEY };
 }
 
+// Get port from environment variable with default
+const PORT = process.env.PORT || 3020;
+
 const IMAGE_WIDTH = 1000;
 const IMAGE_HEIGHT = Math.round((9 / 16) * IMAGE_WIDTH);
 
@@ -352,6 +355,6 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Path not found' });
 });
 
-app.listen(3000, () => {
-  console.log('Image service running on port 3000');
+app.listen(PORT, () => {
+  console.log(`Image service running on port ${PORT}`);
 });
